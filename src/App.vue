@@ -1,13 +1,20 @@
 <template>
-  <div id="app">
-    <h1 class="text-6xl font-bold text-purple-600">Hello from Tailwind!</h1>
+  <div
+    class="min-h-screen bg-gray-200"
+    id="app"
+  >
+    <Nav />
+    <router-view />
   </div>
 </template>
 
 <script>
+import Nav from './components/Nav'
 export default {
   name: 'app',
-  components: {}
+  components: {
+    Nav
+  }
 }
 </script>
 
