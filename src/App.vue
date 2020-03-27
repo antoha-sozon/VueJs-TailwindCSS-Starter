@@ -1,19 +1,24 @@
 <template>
   <div
-    class="min-h-screen bg-gray-200"
+    class="flex min-h-screen bg-gray-200"
     id="app"
   >
     <Nav />
-    <router-view />
+    <TopPanel />
+    <section class="overflow-x-hidden w-full md:ml-64 mt-16">
+      <router-view class="p-4 md:p-6"/>
+    </section>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav'
+import TopPanel from './components/TopPanel'
 export default {
   name: 'app',
   components: {
-    Nav
+    Nav,
+    TopPanel
   }
 }
 </script>

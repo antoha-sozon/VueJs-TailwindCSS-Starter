@@ -1,8 +1,6 @@
 <template>
   <div>
-    <router-link to="/user/id">
-      User name
-    </router-link>
+    User: {{ $route.params.id }}
   </div>
 </template>
 <script>
