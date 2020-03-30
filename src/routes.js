@@ -5,6 +5,7 @@ import Login from './views/Login.vue';
 import Users from './views/Users.vue';
 import User from './views/User.vue';
 import Events from './views/Events.vue';
+import EventEdit from './views/EventEdit.vue';
 
 const routes = [
   { path: '/404', component: Error, name: '404' },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/users', component: Users },
   { path: '/user/:id', component: User },
   { path: '/events', component: Events },
+  { path: '/event/:id', component: EventEdit },
 ];
 
 export default routes;
